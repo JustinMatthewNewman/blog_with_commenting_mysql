@@ -1,0 +1,136 @@
+*{
+margin: 0px;
+padding: 0px;
+font-family: poppins;
+box-sizing: border-box;
+scroll-behavior: smooth;
+}
+a{
+text-decoration: none;
+}
+ul{
+list-style: none;
+}
+body {
+margin: 0px;
+padding: 0px;
+overflow-x: hidden;
+}
+/*hide-Scroll-Bar*/
+body::-webkit-scrollbar {
+display: none;
+}
+body {
+-ms-overflow-style: none;  /* IE and Edge */
+scrollbar-width: none;  /* Firefox */
+}
+.main {
+max-width: 950px;
+width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin: 90px auto 20px auto;
+border-bottom: 1px solid rgb(15, 15, 15);
+padding-bottom: 60px;
+position: relative;
+padding: 12px;
+}
+.main-text strong {
+color: #000;
+font-weight: 700;
+letter-spacing: 1px;
+font-size: 1.65rem;
+margin-bottom: 8px;
+display: flex;
+justify-content: flex-start;
+padding: 12px;
+}
+.main-text h1{
+font-size: 5rem;
+line-height: 4rem;
+letter-spacing: 1px;
+padding: 12px;
+}
+.main-text h1 span{
+color: #8b2020;
+padding: 12px;
+}
+.main-text p{
+color: #999999;
+margin: 30px 0px;
+letter-spacing: 1px;
+font-size:1rem;
+padding: 12px;
+}
+.title {
+width: 400px;
+position: relative;
+}
+.element {
+padding: 24px;
+margin: 50px;
+}
+#justin {
+display: flex;
+justify-content: space-between;
+align-items: center;
+max-width: 950px;
+width: 100%;
+margin:80px auto 0px auto;
+}
+.justin-heading{
+max-width: 400px;
+width: 100%;
+}
+.justin-heading strong{
+color: #8b2020;
+text-transform: uppercase;
+letter-spacing: 3px;
+}
+.justin-heading h2{
+font-size:2.37rem;
+line-height: 2.9rem;
+margin: 20px 0px;
+}
+#newman {
+}
+/* animation starts here */
+.hidden-fadein {
+opacity: 0;
+filter: blur(5px);
+transition: all 1.2s;
+}
+.show-fadein {
+opacity: 1;
+filter: blur(0);
+}
+.hidden-left {
+opacity: 0;
+filter: blur(5px);
+transform: translateX(-100%);
+transition: all 1s;
+}
+.show-left {
+opacity: 1;
+filter: blur(0);
+transform: translateX(0);
+}
+.hidden-right {
+opacity: 0;
+filter: blur(5px);
+transform: translateX(100%);
+transition: all 1s;
+}
+.show-right {
+opacity: 1;
+filter: blur(0);
+transform: translateX(0);
+}
+#preloader {
+background: #000 url(spin-loading.gif) no-repeat center center;
+height: 100vh;
+width: 100%;
+position: fixed;
+z-index: 100;
+}
