@@ -44,8 +44,8 @@ function show_comment($comment, $comments = [], $filters = []) {
         <div class="img">
             <img src="' . (!empty($comment['img']) ? htmlspecialchars($comment['img'], ENT_QUOTES) : default_profile_image) . '" width="48" height="48" alt="Comment Profile Image">
         </div>
-        <div class="con">
-            <div>
+        <div class="posted_comment">
+            <div class="newman_comment">
                 <h3 class="name">' . htmlspecialchars($comment['name'], ENT_QUOTES) . '</h3>
                 <span class="date">' . time_elapsed_string($comment['submit_date']) . '</span>
             </div>

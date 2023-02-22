@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Circular&display=swap');
+
+
 *{
 margin: 0px;
 padding: 0px;
@@ -35,6 +38,8 @@ border-bottom: 1px solid rgb(15, 15, 15);
 padding-bottom: 60px;
 position: relative;
 padding: 12px;
+font-family: 'Circular', sans-serif;
+
 }
 .main-text strong {
 color: #000;
@@ -45,12 +50,16 @@ margin-bottom: 8px;
 display: flex;
 justify-content: flex-start;
 padding: 12px;
+font-family: 'Circular', sans-serif;
+
 }
 .main-text h1{
 font-size: 5rem;
 line-height: 4rem;
 letter-spacing: 1px;
 padding: 12px;
+font-family: 'Circular', sans-serif;
+
 }
 .main-text h1 span{
 color: #8b2020;
@@ -134,3 +143,26 @@ width: 100%;
 position: fixed;
 z-index: 100;
 }
+
+
+
+
+
+
+
+
+
+/* Media Queries */
+
+@media screen and (min-width: 480px) {
+    #newman {
+        font-size: 1.75rem;
+    }
+    .justin-heading {
+        font-size: 1.85rem;
+    }
+    .main-text p {
+        font-size: 1.75rem;
+    }
+
+  }
